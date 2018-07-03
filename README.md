@@ -16,3 +16,7 @@ https://www.codemag.com/Article/1807051/Introducing-.NET-Core-2.1-Flagship-Types
 
 *Microservices*
 https://martinfowler.com/articles/microservices.html
+
+C#
+
+https://www.codemag.com/Article/1807051/Introducing-.NET-Core-2.1-Flagship-Types-Span-T-and-Memory-T
