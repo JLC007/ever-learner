@@ -23,7 +23,7 @@ https://www.codemag.com/Article/1807051/Introducing-.NET-Core-2.1-Flagship-Types
 
 
 *Docker chect sheet*
-docker build -t friendlyhello .             # Create image using this directory's Dockerfile
+* docker build -t friendlyhello .             # Create image using this directory's Dockerfile
 docker run -p 4000:80 friendlyhello         # Run "friendlyname" mapping port 4000 to 80
 docker run -d -p 4000:80 friendlyhello      # Same thing, but in detached mode
 docker container ls                         # List all running containers
@@ -45,5 +45,6 @@ https://github.com/docker/machine/issues/4424
 
 
 Entity Framework Core:
+AsNoTracking()
 * AsNoTracking() allows the "unique key per record" requirement in EF to be bypassed (not mentioned explicitly by other answers).
 * In a nutshell you should use .AsNoTracking() in any Entity Framework query which you intend to use only for reading data. This will ensure minimal memory usage and optimal performance in these cases.
