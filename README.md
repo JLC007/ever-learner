@@ -41,3 +41,9 @@ docker push username/repository:tag         # Upload tagged image to registry
 docker run username/repository:tag          # Run image from a registry
   
 https://github.com/docker/machine/issues/4424
+
+
+
+Entity Framework Core:
+* AsNoTracking() allows the "unique key per record" requirement in EF to be bypassed (not mentioned explicitly by other answers).
+* In a nutshell you should use .AsNoTracking() in any Entity Framework query which you intend to use only for reading data. This will ensure minimal memory usage and optimal performance in these cases.
